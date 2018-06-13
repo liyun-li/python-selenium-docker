@@ -1,4 +1,6 @@
 FROM ubuntu:artful
 
 RUN apt-get -y update && apt-get -y upgrade && \
-	apt-get -y install xvfb firefox python3 python3-pip
+	apt-get -y install firefox python3 python3-pip chromium-browser
+
+RUN pip3 install -r req.txt
